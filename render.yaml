@@ -1,5 +1,5 @@
 # Render.com deployment configuration
-# Render auto-detects this file for Python apps
+# Place this in your repository root for auto-detection
 services:
   - type: web
     name: pokemon-webhook
