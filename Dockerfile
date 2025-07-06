@@ -22,5 +22,5 @@ RUN mkdir -p logs
 ENV PYTHONPATH=/app
 ENV PYTHONUNBUFFERED=1
 
-# Default command (can be overridden in docker-compose.yml)
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
+# Default command (can be overridden in railway.toml)
+CMD ["gunicorn", "webhook_server:app", "--host", "0.0.0.0", "--port", "8000"]
