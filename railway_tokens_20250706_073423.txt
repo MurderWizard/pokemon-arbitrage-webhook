@@ -1,0 +1,13 @@
+# Railway Environment Variables
+# Generated: 2025-07-06T07:34:23.697122
+
+# Add these to Railway dashboard:
+
+TG_TOKEN=7688729602:AAEoi5jAtR-n3XOxJI7DSonbLoqJSEXaXvA
+EBAY_VERIFICATION_TOKEN=pokemon_arbitrage_secure_token_2025_ebay_compliance_abc123
+
+# Instructions:
+# 1. Go to Railway dashboard
+# 2. Select your project
+# 3. Click Variables tab
+# 4. Add both variables above
