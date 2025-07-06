@@ -1,0 +1,17 @@
+[Unit]
+Description=Pokemon Card Arbitrage Background System
+After=network.target
+
+[Service]
+Type=simple
+User=jthomas4641
+WorkingDirectory=/home/jthomas4641/pokemon
+Environment=PATH=/home/jthomas4641/pokemon/.venv/bin:/usr/local/bin:/usr/bin:/bin
+ExecStart=/home/jthomas4641/pokemon/.venv/bin/python /home/jthomas4641/pokemon/background_arbitrage_mvp.py
+Restart=always
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

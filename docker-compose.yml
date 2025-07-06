@@ -1,0 +1,105 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_DB: pokemon_arbitrage
+      POSTGRES_USER: flip
+      POSTGRES_PASSWORD: secure_password
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5433:5432"  # Changed from 5432 to avoid whale bot conflicts
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U flip -d pokemon_arbitrage"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6380:6379"  # Changed from 6379 to avoid whale bot conflicts
+    volumes:
+      - redis_data:/data
+    command: redis-server --appendonly yes
+
+  api:
+    build: .
+    ports:
+      - "8001:8000"  # Changed from 8000 to avoid whale bot conflicts
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_started
+    environment:
+      - DB_URL=postgresql://flip:secure_password@postgres:5432/pokemon_arbitrage
+      - REDIS_URL=redis://redis:6379
+    volumes:
+      - .:/app
+      - ./logs:/app/logs
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+
+  worker:
+    build: .
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_started
+    environment:
+      - DB_URL=postgresql://flip:secure_password@postgres:5432/pokemon_arbitrage
+      - REDIS_URL=redis://redis:6379
+    volumes:
+      - .:/app
+      - ./logs:/app/logs
+    command: python -m app.workers.main
+
+  scheduler:
+    build: .
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_started
+    environment:
+      - DB_URL=postgresql://flip:secure_password@postgres:5432/pokemon_arbitrage
+      - REDIS_URL=redis://redis:6379
+    volumes:
+      - .:/app
+      - ./logs:/app/logs
+    command: python -m app.scheduler.main
+
+  dashboard:
+    build: .
+    ports:
+      - "8502:8501"  # Changed from 8501 to avoid whale bot conflicts
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      - DB_URL=postgresql://flip:secure_password@postgres:5432/pokemon_arbitrage
+    volumes:
+      - .:/app
+    command: streamlit run app/dashboard/main.py --server.port=8501 --server.address=0.0.0.0
+
+  telegram-bot:
+    build: .
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_started
+    environment:
+      - DB_URL=postgresql://flip:secure_password@postgres:5432/pokemon_arbitrage
+      - REDIS_URL=redis://redis:6379
+    volumes:
+      - .:/app
+      - ./logs:/app/logs
+    command: python -m app.telegram.bot
+
+volumes:
+  postgres_data:
+  redis_data:

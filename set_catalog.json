@@ -1,0 +1,125 @@
+{
+    "meta": {
+        "last_updated": "2025-07-04",
+        "version": "1.1",
+        "description": "Pokemon TCG set information and reprint tracking"
+    },
+    "set_info": {
+        "modern_era": {
+            "Scarlet & Violet": {
+                "release_date": "2025-03-31",
+                "rotation_status": "standard",
+                "expected_rotation": "2027",
+                "market_status": "active",
+                "total_cards": 258,
+                "print_waves": [
+                    {"date": "2025-03-31", "type": "initial"},
+                    {"date": "2025-05-15", "type": "reprint"}
+                ]
+            },
+            "Crown Zenith": {
+                "release_date": "2025-01-20",
+                "rotation_status": "standard",
+                "expected_rotation": "2027",
+                "market_status": "active",
+                "total_cards": 230,
+                "print_waves": [
+                    {"date": "2025-01-20", "type": "initial"},
+                    {"date": "2025-03-10", "type": "special"}
+                ]
+            },
+            "Silver Tempest": {
+                "release_date": "2024-11-11",
+                "rotation_status": "standard",
+                "expected_rotation": "2026",
+                "market_status": "active",
+                "total_cards": 245,
+                "print_waves": [
+                    {"date": "2024-11-11", "type": "initial"},
+                    {"date": "2025-01-05", "type": "reprint"}
+                ]
+            }
+        },
+        "sun_moon_era": {
+            "Team Up": {
+                "release_date": "2019-02-01",
+                "rotation_status": "expanded",
+                "market_status": "vintage_trending",
+                "total_cards": 196,
+                "print_waves": [
+                    {"date": "2019-02-01", "type": "initial"},
+                    {"date": "2019-04-15", "type": "reprint"},
+                    {"date": "2019-08-20", "type": "final"}
+                ]
+            },
+            "Hidden Fates": {
+                "release_date": "2019-08-23",
+                "rotation_status": "expanded",
+                "market_status": "premium_stable",
+                "total_cards": 69,
+                "special_notes": "Shiny vault cards maintain premium value",
+                "print_waves": [
+                    {"date": "2019-08-23", "type": "initial"},
+                    {"date": "2020-09-15", "type": "reprint"},
+                    {"date": "2021-03-20", "type": "special"}
+                ]
+            }
+        },
+        "vintage_era": {
+            "Base Set": {
+                "release_date": "1999-01-09",
+                "rotation_status": "vintage",
+                "market_status": "collector",
+                "total_cards": 102,
+                "print_waves": [
+                    {"date": "1999-01-09", "type": "1st_edition"},
+                    {"date": "1999-02-15", "type": "shadowless"},
+                    {"date": "1999-04-20", "type": "unlimited"},
+                    {"date": "1999-12-10", "type": "fourth_print"}
+                ],
+                "special_notes": "Each print wave significantly affects value"
+            }
+        }
+    },
+    "reprint_impact_rules": {
+        "standard_set": {
+            "initial_release": 1.0,
+            "first_reprint": 0.7,
+            "second_reprint": 0.5,
+            "special_reprint": 0.8
+        },
+        "special_set": {
+            "initial_release": 1.2,
+            "first_reprint": 0.9,
+            "second_reprint": 0.7,
+            "special_reprint": 1.0
+        },
+        "vintage_set": {
+            "1st_edition": 5.0,
+            "shadowless": 3.0,
+            "unlimited": 1.0,
+            "fourth_print": 0.8
+        }
+    },
+    "market_status_modifiers": {
+        "active": 1.0,
+        "cooling": 0.8,
+        "heated": 1.2,
+        "premium_stable": 1.1,
+        "vintage_trending": 1.3,
+        "collector": 1.5
+    },
+    "rotation_impact": {
+        "standard": {
+            "new": 1.2,
+            "established": 1.0,
+            "pre_rotation": 0.8,
+            "post_rotation": 0.6
+        },
+        "expanded": {
+            "initial_drop": 0.5,
+            "stabilized": 0.7,
+            "vintage_appeal": 1.1
+        }
+    }
+}

@@ -1,0 +1,153 @@
+{
+  "last_updated": "2025-07-03T14:30:00",
+  "source": "manual_research",
+  "cards": [
+    {
+      "name": "Charizard VMAX",
+      "set": "Champions Path",
+      "market_price": 85.00,
+      "low_price": 70.00,
+      "high_price": 100.00,
+      "condition": "Near Mint",
+      "trend": "stable",
+      "last_updated": "2025-07-03T14:30:00",
+      "notes": "Popular card, steady demand"
+    },
+    {
+      "name": "Charizard VMAX",
+      "set": "Darkness Ablaze",
+      "market_price": 45.00,
+      "low_price": 38.00,
+      "high_price": 55.00,
+      "condition": "Near Mint",
+      "trend": "down",
+      "last_updated": "2025-07-03T14:30:00",
+      "notes": "More common than Champions Path version"
+    },
+    {
+      "name": "Pikachu VMAX",
+      "set": "Vivid Voltage",
+      "market_price": 25.00,
+      "low_price": 20.00,
+      "high_price": 30.00,
+      "condition": "Near Mint",
+      "trend": "stable",
+      "last_updated": "2025-07-03T14:30:00"
+    },
+    {
+      "name": "Rayquaza VMAX",
+      "set": "Evolving Skies",
+      "market_price": 70.00,
+      "low_price": 60.00,
+      "high_price": 85.00,
+      "condition": "Near Mint",
+      "trend": "up",
+      "last_updated": "2025-07-03T14:30:00",
+      "notes": "Popular alt art version"
+    },
+    {
+      "name": "Umbreon VMAX",
+      "set": "Evolving Skies",
+      "market_price": 120.00,
+      "low_price": 100.00,
+      "high_price": 140.00,
+      "condition": "Near Mint",
+      "trend": "up",
+      "last_updated": "2025-07-03T14:30:00",
+      "notes": "High demand card"
+    },
+    {
+      "name": "Base Set Charizard",
+      "set": "Base Set",
+      "market_price": 450.00,
+      "low_price": 350.00,
+      "high_price": 600.00,
+      "condition": "Near Mint",
+      "trend": "stable",
+      "last_updated": "2025-07-03T14:30:00",
+      "notes": "Unlimited edition"
+    },
+    {
+      "name": "Base Set Charizard",
+      "set": "Base Set Shadowless",
+      "market_price": 850.00,
+      "low_price": 700.00,
+      "high_price": 1100.00,
+      "condition": "Near Mint",
+      "trend": "up",
+      "last_updated": "2025-07-03T14:30:00",
+      "notes": "Shadowless version premium"
+    },
+    {
+      "name": "Base Set Charizard",
+      "set": "Base Set 1st Edition",
+      "market_price": 2500.00,
+      "low_price": 2000.00,
+      "high_price": 3200.00,
+      "condition": "Near Mint",
+      "trend": "up",
+      "last_updated": "2025-07-03T14:30:00",
+      "notes": "Holy grail card"
+    },
+    {
+      "name": "Lugia V",
+      "set": "Silver Tempest",
+      "market_price": 80.00,
+      "low_price": 70.00,
+      "high_price": 95.00,
+      "condition": "Near Mint",
+      "trend": "stable",
+      "last_updated": "2025-07-03T14:30:00"
+    },
+    {
+      "name": "Mewtwo GX",
+      "set": "Shining Legends",
+      "market_price": 25.00,
+      "low_price": 20.00,
+      "high_price": 32.00,
+      "condition": "Near Mint",
+      "trend": "stable",
+      "last_updated": "2025-07-03T14:30:00"
+    },
+    {
+      "name": "Alakazam EX",
+      "set": "Fates Collide",
+      "market_price": 8.00,
+      "low_price": 6.00,
+      "high_price": 12.00,
+      "condition": "Near Mint",
+      "trend": "stable",
+      "last_updated": "2025-07-03T14:30:00"
+    },
+    {
+      "name": "Gengar EX",
+      "set": "Phantom Forces",
+      "market_price": 15.00,
+      "low_price": 12.00,
+      "high_price": 20.00,
+      "condition": "Near Mint",
+      "trend": "stable",
+      "last_updated": "2025-07-03T14:30:00"
+    },
+    {
+      "name": "Dragonite V",
+      "set": "Evolving Skies",
+      "market_price": 6.00,
+      "low_price": 4.50,
+      "high_price": 8.00,
+      "condition": "Near Mint",
+      "trend": "down",
+      "last_updated": "2025-07-03T14:30:00"
+    },
+    {
+      "name": "Gyarados GX",
+      "set": "Hidden Fates",
+      "market_price": 12.00,
+      "low_price": 9.00,
+      "high_price": 16.00,
+      "condition": "Near Mint",
+      "trend": "stable",
+      "last_updated": "2025-07-03T14:30:00"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+[
+  {
+    "card_name": "Charizard VMAX",
+    "set_name": "Champions Path",
+    "timestamp": "2025-07-04T19:47:42.711214",
+    "verified_price": 85.80820000000001,
+    "confidence": 0.706877343890211,
+    "sources": {
+      "tcgplayer": 85.0,
+      "ebay_sold": 87.245,
+      "local_db": 85.0
+    },
+    "outliers": [],
+    "variance": 1.6800083333333402
+  },
+  {
+    "card_name": "Pikachu V",
+    "set_name": "Vivid Voltage",
+    "timestamp": "2025-07-04T19:47:43.726784",
+    "verified_price": 23.1982,
+    "confidence": 0.5366956272469414,
+    "sources": {
+      "tcgplayer": 25.0,
+      "ebay_sold": 19.994999999999997,
+      "local_db": 25.0
+    },
+    "outliers": [],
+    "variance": 8.350008333333342
+  },
+  {
+    "card_name": "Lugia V",
+    "set_name": "Silver Tempest",
+    "timestamp": "2025-07-04T19:47:44.896591",
+    "verified_price": 138.6764,
+    "confidence": 0.4666666666666667,
+    "sources": {
+      "tcgplayer": 80.0,
+      "ebay_sold": 242.99,
+      "local_db": 80.0
+    },
+    "outliers": [],
+    "variance": 8855.246700000002
+  },
+  {
+    "card_name": "Base Set Charizard",
+    "set_name": "Base Set",
+    "timestamp": "2025-07-04T19:47:45.932284",
+    "verified_price": 337.5864,
+    "confidence": 0.4666666666666667,
+    "sources": {
+      "tcgplayer": 450.0,
+      "ebay_sold": 137.74,
+      "local_db": 450.0
+    },
+    "outliers": [],
+    "variance": 32502.10253333333
+  }
+]

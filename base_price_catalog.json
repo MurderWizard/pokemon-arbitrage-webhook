@@ -1,0 +1,229 @@
+{
+    "meta": {
+        "last_updated": "2025-07-04",
+        "version": "1.0",
+        "description": "Base price catalog for Pokemon card arbitrage"
+    },
+    "price_tiers": {
+        "chase_cards": {
+            "description": "High-value cards ($100+) - Daily price monitoring",
+            "cards": {
+                "Charizard VMAX (Secret)": {
+                    "sets": {
+                        "Champions Path": 350.00,
+                        "Shining Fates": 280.00
+                    },
+                    "notes": "High volatility, frequent price spikes",
+                    "priority": "critical"
+                },
+                "Pikachu VMAX (Secret)": {
+                    "sets": {
+                        "Vivid Voltage": 250.00
+                    },
+                    "notes": "Popular character, stable value",
+                    "priority": "high"
+                },
+                "Umbreon VMAX (Alt Art)": {
+                    "sets": {
+                        "Evolving Skies": 380.00
+                    },
+                    "notes": "Highly sought after alt art",
+                    "priority": "critical"
+                },
+                "Charizard V (Alt Art)": {
+                    "sets": {
+                        "Brilliant Stars": 220.00
+                    },
+                    "notes": "Popular alt art",
+                    "priority": "high"
+                },
+                "Lugia V (Alt Art)": {
+                    "sets": {
+                        "Silver Tempest": 190.00
+                    },
+                    "notes": "Strong collector demand",
+                    "priority": "high"
+                }
+            }
+        },
+        "staple_cards": {
+            "description": "Mid-range cards ($20-100) - Weekly price monitoring",
+            "cards": {
+                "Charizard V": {
+                    "sets": {
+                        "Brilliant Stars": 45.00,
+                        "Champions Path": 35.00,
+                        "Darkness Ablaze": 25.00
+                    },
+                    "notes": "Common target for arbitrage",
+                    "priority": "medium"
+                },
+                "Pikachu V": {
+                    "sets": {
+                        "Vivid Voltage": 30.00,
+                        "Sword & Shield Promo": 25.00
+                    },
+                    "notes": "Steady value",
+                    "priority": "medium"
+                },
+                "Mew VMAX": {
+                    "sets": {
+                        "Fusion Strike": 55.00
+                    },
+                    "notes": "Meta relevant",
+                    "priority": "medium"
+                },
+                "Mewtwo V": {
+                    "sets": {
+                        "Pokemon GO": 40.00
+                    },
+                    "notes": "Popular character",
+                    "priority": "medium"
+                },
+                "Rayquaza VMAX": {
+                    "sets": {
+                        "Evolving Skies": 65.00
+                    },
+                    "notes": "Meta relevant",
+                    "priority": "medium"
+                }
+            }
+        },
+        "bulk_valuable": {
+            "description": "Common but valuable cards ($5-20) - Monthly price monitoring",
+            "cards": {
+                "Professor's Research (Full Art)": {
+                    "sets": {
+                        "Various Sets": 8.00
+                    },
+                    "notes": "Trainer staple",
+                    "priority": "low"
+                },
+                "Basic Energy (Holo)": {
+                    "sets": {
+                        "Various Sets": 5.00
+                    },
+                    "notes": "Always in demand",
+                    "priority": "low"
+                },
+                "Common VMAX": {
+                    "sets": {
+                        "Various Sets": 15.00
+                    },
+                    "notes": "Good bulk value",
+                    "priority": "low"
+                },
+                "Common V": {
+                    "sets": {
+                        "Various Sets": 7.00
+                    },
+                    "notes": "Common in collections",
+                    "priority": "low"
+                }
+            }
+        },
+        "vintage_stable": {
+            "description": "Classic cards with stable value - Monthly monitoring",
+            "cards": {
+                "Base Set Holos": {
+                    "sets": {
+                        "Base Set": 45.00
+                    },
+                    "notes": "Excluding Charizard",
+                    "priority": "medium"
+                },
+                "Jungle/Fossil Holos": {
+                    "sets": {
+                        "Jungle": 35.00,
+                        "Fossil": 35.00
+                    },
+                    "notes": "Stable value",
+                    "priority": "medium"
+                },
+                "1st Edition Commons": {
+                    "sets": {
+                        "Various Sets": 15.00
+                    },
+                    "notes": "Good for bulk buying",
+                    "priority": "low"
+                }
+            }
+        },
+        "ultra_premium": {
+            "description": "Ultra-rare cards ($500+) - Monitor for authenticity",
+            "cards": {
+                "Charizard": {
+                    "sets": {
+                        "Base Set 1st Edition": 2500.00,
+                        "Base Set Shadowless": 850.00
+                    },
+                    "notes": "High-end market",
+                    "priority": "watch"
+                },
+                "Pikachu Illustrator": {
+                    "sets": {
+                        "Promo": 500000.00
+                    },
+                    "notes": "Ultra rare",
+                    "priority": "watch"
+                },
+                "Trophy Cards": {
+                    "sets": {
+                        "Various": 1000.00
+                    },
+                    "notes": "Verify authenticity",
+                    "priority": "watch"
+                }
+            }
+        }
+    },
+    "set_priorities": {
+        "critical_watch": [
+            "Scarlet & Violet",
+            "Crown Zenith",
+            "Silver Tempest",
+            "Lost Origin",
+            "Astral Radiance",
+            "Brilliant Stars",
+            "Evolving Skies",
+            "Celebrations",
+            "Champions Path",
+            "Hidden Fates",
+            "Shining Fates"
+        ],
+        "active_market": [
+            "Paldea Evolved",
+            "Pokemon GO",
+            "Fusion Strike",
+            "Chilling Reign",
+            "Battle Styles",
+            "Vivid Voltage",
+            "Darkness Ablaze"
+        ],
+        "vintage_focus": [
+            "Base Set",
+            "Jungle",
+            "Fossil",
+            "Team Rocket",
+            "Gym Heroes",
+            "Gym Challenge",
+            "Neo Genesis"
+        ]
+    },
+    "card_conditions": {
+        "Near Mint": 1.0,
+        "Lightly Played": 0.8,
+        "Moderately Played": 0.6,
+        "Heavily Played": 0.4,
+        "Damaged": 0.2
+    },
+    "grading_multipliers": {
+        "PSA 10": 3.0,
+        "PSA 9": 1.5,
+        "PSA 8": 1.2,
+        "CGC 10": 2.5,
+        "CGC 9.5": 1.4,
+        "BGS 10": 3.5,
+        "BGS 9.5": 1.6
+    }
+}

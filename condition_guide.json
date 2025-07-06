@@ -1,0 +1,208 @@
+{
+    "meta": {
+        "last_updated": "2025-07-04",
+        "version": "1.0",
+        "description": "Card condition and grading assessment system"
+    },
+    "grading_companies": {
+        "PSA": {
+            "multipliers": {
+                "10": 3.0,
+                "9": 1.5,
+                "8": 1.2,
+                "7": 0.9,
+                "6": 0.7,
+                "5": 0.5,
+                "4": 0.4,
+                "3": 0.3,
+                "2": 0.2,
+                "1": 0.1
+            },
+            "special_labels": {
+                "GEM-MT 10": 3.2,
+                "PRISTINE 10": 4.0,
+                "PSA 10 STRONG": 3.5
+            },
+            "confidence": 0.95,
+            "market_share": 0.65
+        },
+        "BGS": {
+            "multipliers": {
+                "10": 4.0,
+                "9.5": 2.0,
+                "9": 1.4,
+                "8.5": 1.1,
+                "8": 0.9,
+                "7": 0.7,
+                "6": 0.5
+            },
+            "special_labels": {
+                "PRISTINE 10": 5.0,
+                "BLACK LABEL 10": 10.0
+            },
+            "subgrades_impact": true,
+            "confidence": 0.90,
+            "market_share": 0.20
+        },
+        "CGC": {
+            "multipliers": {
+                "10": 2.5,
+                "9.5": 1.5,
+                "9": 1.2,
+                "8.5": 1.0,
+                "8": 0.8,
+                "7": 0.6
+            },
+            "special_labels": {
+                "PERFECT 10": 3.0
+            },
+            "subgrades_impact": true,
+            "confidence": 0.85,
+            "market_share": 0.15
+        }
+    },
+    "raw_conditions": {
+        "Near Mint/Mint": {
+            "multiplier": 1.0,
+            "confidence": 0.85,
+            "keywords": [
+                "NM/M",
+                "NM-MT",
+                "Near Mint/Mint",
+                "Near Mint to Mint"
+            ],
+            "expected_characteristics": {
+                "corners": "Sharp with no white edges",
+                "edges": "Clean with minimal wear",
+                "surface": "No scratches or marks",
+                "centering": "Good to excellent"
+            }
+        },
+        "Near Mint": {
+            "multiplier": 0.9,
+            "confidence": 0.80,
+            "keywords": [
+                "NM",
+                "Near Mint",
+                "Near-Mint"
+            ],
+            "expected_characteristics": {
+                "corners": "Sharp with minimal whitening",
+                "edges": "Clean with slight wear acceptable",
+                "surface": "Minor imperfections acceptable",
+                "centering": "Slightly off-center acceptable"
+            }
+        },
+        "Excellent": {
+            "multiplier": 0.7,
+            "confidence": 0.75,
+            "keywords": [
+                "EX",
+                "Excellent",
+                "EX/NM"
+            ],
+            "expected_characteristics": {
+                "corners": "Light wear visible",
+                "edges": "Some wear visible",
+                "surface": "Light scratches acceptable",
+                "centering": "Noticeably off-center acceptable"
+            }
+        },
+        "Very Good": {
+            "multiplier": 0.5,
+            "confidence": 0.70,
+            "keywords": [
+                "VG",
+                "Very Good",
+                "VG/EX"
+            ],
+            "expected_characteristics": {
+                "corners": "Moderate wear",
+                "edges": "Noticeable wear",
+                "surface": "Some scratches and marks",
+                "centering": "Obviously off-center acceptable"
+            }
+        },
+        "Good": {
+            "multiplier": 0.3,
+            "confidence": 0.65,
+            "keywords": [
+                "G",
+                "Good",
+                "G/VG"
+            ],
+            "expected_characteristics": {
+                "corners": "Heavy wear",
+                "edges": "Significant wear",
+                "surface": "Multiple marks/scratches",
+                "centering": "Poor centering acceptable"
+            }
+        }
+    },
+    "listing_confidence_rules": {
+        "has_clear_photos": 0.2,
+        "mentions_specific_flaws": 0.15,
+        "seller_rating_impact": {
+            "99+": 0.1,
+            "98-99": 0.05,
+            "95-97": 0,
+            "<95": -0.1
+        },
+        "return_policy_impact": {
+            "30_day": 0.1,
+            "14_day": 0.05,
+            "none": -0.1
+        }
+    },
+    "automatic_condition_keywords": {
+        "negative": {
+            "heavy_impact": [
+                "damaged",
+                "creased",
+                "bent",
+                "peeling",
+                "water damage"
+            ],
+            "medium_impact": [
+                "played",
+                "worn",
+                "scratched",
+                "whitening"
+            ],
+            "light_impact": [
+                "slight wear",
+                "minor whitening",
+                "off center"
+            ]
+        },
+        "positive": {
+            "high_confidence": [
+                "pack fresh",
+                "gem mint",
+                "pristine"
+            ],
+            "medium_confidence": [
+                "near mint",
+                "like new",
+                "clean card"
+            ]
+        }
+    },
+    "grading_company_identifiers": {
+        "PSA": [
+            "PSA",
+            "Professional Sports Authenticator",
+            "PSA Authentic"
+        ],
+        "BGS": [
+            "BGS",
+            "Beckett",
+            "Beckett Grading Services"
+        ],
+        "CGC": [
+            "CGC",
+            "Certified Guaranty Company",
+            "CGC Trading Cards"
+        ]
+    }
+}

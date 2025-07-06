@@ -1,0 +1,15 @@
+[Unit]
+Description=Pokemon Card Price Volatility Monitor
+After=network.target
+
+[Service]
+Type=simple
+User=jthomas4641
+WorkingDirectory=/home/jthomas4641/pokemon
+Environment=PYTHONUNBUFFERED=1
+ExecStart=/usr/bin/python3 /home/jthomas4641/pokemon/auto_volatility_monitor.py
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

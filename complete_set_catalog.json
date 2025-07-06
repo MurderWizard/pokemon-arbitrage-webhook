@@ -1,0 +1,142 @@
+{
+    "meta": {
+        "last_updated": "2025-07-04",
+        "total_cards_ever_printed": 15783,
+        "description": "Complete Pokemon TCG set catalog with card counts"
+    },
+    "eras": {
+        "scarlet_violet": {
+            "description": "Scarlet & Violet Era (2023-2025)",
+            "sets": {
+                "Temporal Forces": {"release": "2025-05", "total_cards": 217},
+                "Paldean Fates": {"release": "2025-03", "total_cards": 258},
+                "Paradox Rift": {"release": "2025-01", "total_cards": 182},
+                "Obsidian Flames": {"release": "2024-11", "total_cards": 197},
+                "Paldea Evolved": {"release": "2024-09", "total_cards": 217},
+                "Scarlet & Violet": {"release": "2023-03", "total_cards": 258}
+            }
+        },
+        "sword_shield": {
+            "description": "Sword & Shield Era (2020-2023)",
+            "sets": {
+                "Crown Zenith": {"release": "2023-01", "total_cards": 230},
+                "Silver Tempest": {"release": "2022-11", "total_cards": 245},
+                "Lost Origin": {"release": "2022-09", "total_cards": 247},
+                "Pokemon GO": {"release": "2022-07", "total_cards": 88},
+                "Astral Radiance": {"release": "2022-05", "total_cards": 246},
+                "Brilliant Stars": {"release": "2022-02", "total_cards": 172},
+                "Fusion Strike": {"release": "2021-11", "total_cards": 264},
+                "Celebrations": {"release": "2021-10", "total_cards": 25},
+                "Evolving Skies": {"release": "2021-08", "total_cards": 237},
+                "Chilling Reign": {"release": "2021-06", "total_cards": 233},
+                "Battle Styles": {"release": "2021-03", "total_cards": 183},
+                "Shining Fates": {"release": "2021-02", "total_cards": 122},
+                "Vivid Voltage": {"release": "2020-11", "total_cards": 203},
+                "Champions Path": {"release": "2020-09", "total_cards": 80},
+                "Darkness Ablaze": {"release": "2020-08", "total_cards": 189},
+                "Rebel Clash": {"release": "2020-05", "total_cards": 192},
+                "Sword & Shield": {"release": "2020-02", "total_cards": 202}
+            }
+        },
+        "sun_moon": {
+            "description": "Sun & Moon Era (2017-2019)",
+            "sets": {
+                "Cosmic Eclipse": {"release": "2019-11", "total_cards": 236},
+                "Hidden Fates": {"release": "2019-08", "total_cards": 69},
+                "Unified Minds": {"release": "2019-08", "total_cards": 236},
+                "Unbroken Bonds": {"release": "2019-05", "total_cards": 214},
+                "Detective Pikachu": {"release": "2019-04", "total_cards": 18},
+                "Team Up": {"release": "2019-02", "total_cards": 196},
+                "Lost Thunder": {"release": "2018-11", "total_cards": 214},
+                "Dragon Majesty": {"release": "2018-09", "total_cards": 70},
+                "Celestial Storm": {"release": "2018-08", "total_cards": 168},
+                "Forbidden Light": {"release": "2018-05", "total_cards": 131},
+                "Ultra Prism": {"release": "2018-02", "total_cards": 156},
+                "Crimson Invasion": {"release": "2017-11", "total_cards": 111},
+                "Shining Legends": {"release": "2017-10", "total_cards": 73},
+                "Burning Shadows": {"release": "2017-08", "total_cards": 147},
+                "Guardians Rising": {"release": "2017-05", "total_cards": 145},
+                "Sun & Moon": {"release": "2017-02", "total_cards": 149}
+            }
+        },
+        "xy": {
+            "description": "XY Era (2014-2017)",
+            "sets": {
+                "Evolutions": {"release": "2016-11", "total_cards": 108},
+                "Steam Siege": {"release": "2016-08", "total_cards": 114},
+                "Fates Collide": {"release": "2016-05", "total_cards": 124},
+                "Generations": {"release": "2016-02", "total_cards": 83},
+                "BREAKpoint": {"release": "2016-02", "total_cards": 122},
+                "BREAKthrough": {"release": "2015-11", "total_cards": 162},
+                "Ancient Origins": {"release": "2015-08", "total_cards": 98},
+                "Roaring Skies": {"release": "2015-05", "total_cards": 108},
+                "Primal Clash": {"release": "2015-02", "total_cards": 160},
+                "Phantom Forces": {"release": "2014-11", "total_cards": 119},
+                "Furious Fists": {"release": "2014-08", "total_cards": 111},
+                "Flashfire": {"release": "2014-05", "total_cards": 106},
+                "XY": {"release": "2014-02", "total_cards": 146}
+            }
+        },
+        "black_white": {
+            "description": "Black & White Era (2011-2013)",
+            "sets": {
+                "Legendary Treasures": {"release": "2013-11", "total_cards": 113},
+                "Plasma Blast": {"release": "2013-08", "total_cards": 101},
+                "Plasma Freeze": {"release": "2013-05", "total_cards": 116},
+                "Plasma Storm": {"release": "2013-02", "total_cards": 135},
+                "Boundaries Crossed": {"release": "2012-11", "total_cards": 149},
+                "Dragons Exalted": {"release": "2012-08", "total_cards": 124},
+                "Dark Explorers": {"release": "2012-05", "total_cards": 111},
+                "Next Destinies": {"release": "2012-02", "total_cards": 99},
+                "Noble Victories": {"release": "2011-11", "total_cards": 101},
+                "Emerging Powers": {"release": "2011-08", "total_cards": 98},
+                "Black & White": {"release": "2011-04", "total_cards": 114}
+            }
+        },
+        "vintage": {
+            "description": "Classic Sets (1999-2010)",
+            "sets": {
+                "Call of Legends": {"release": "2011-02", "total_cards": 106},
+                "Triumphant": {"release": "2010-11", "total_cards": 102},
+                "Undaunted": {"release": "2010-08", "total_cards": 90},
+                "Unleashed": {"release": "2010-05", "total_cards": 95},
+                "HeartGold & SoulSilver": {"release": "2010-02", "total_cards": 123},
+                "Arceus": {"release": "2009-11", "total_cards": 99},
+                "Supreme Victors": {"release": "2009-08", "total_cards": 147},
+                "Platinum": {"release": "2009-02", "total_cards": 127},
+                "Stormfront": {"release": "2008-11", "total_cards": 100},
+                "Base Set": {"release": "1999-01", "total_cards": 102},
+                "Jungle": {"release": "1999-06", "total_cards": 64},
+                "Fossil": {"release": "1999-10", "total_cards": 62},
+                "Base Set 2": {"release": "2000-02", "total_cards": 130},
+                "Team Rocket": {"release": "2000-04", "total_cards": 82},
+                "Gym Heroes": {"release": "2000-08", "total_cards": 132},
+                "Gym Challenge": {"release": "2000-10", "total_cards": 132}
+            }
+        }
+    },
+    "special_releases": {
+        "promos": {
+            "description": "Promotional Cards",
+            "categories": {
+                "SWSH Black Star Promos": {"cards": 269},
+                "SM Black Star Promos": {"cards": 248},
+                "XY Black Star Promos": {"cards": 216},
+                "BW Black Star Promos": {"cards": 101},
+                "HGSS Black Star Promos": {"cards": 25},
+                "DP Black Star Promos": {"cards": 56},
+                "POP Series Promos": {"cards": 17},
+                "Nintendo Black Star Promos": {"cards": 40},
+                "Wizards Black Star Promos": {"cards": 53}
+            }
+        },
+        "tournament_prizes": {
+            "description": "Tournament/Trophy Cards",
+            "categories": {
+                "Championship Cards": {"cards": 156},
+                "Trophy Cards": {"cards": 89},
+                "Battle Road/Challenge": {"cards": 45}
+            }
+        }
+    }
+}
