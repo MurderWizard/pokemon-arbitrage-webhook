@@ -9,6 +9,20 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
+# Default port fallbacks
+DEFAULT_PORT = 8080
+port = DEFAULT_PORT
+
+# Try to get port from various environment variables
+for env_var in ['PORT', 'RAILWAY_PORT', 'SERVER_PORT']:
+    try:
+        if os.getenv(env_var):
+            port = int(os.getenv(env_var))
+            logger.info(f"Using port {port} from {env_var}")
+            break
+    except ValueError as e:
+        logger.warning(f"Invalid port in {env_var}: {e}")
+
 app = Flask(__name__)
 
 @app.route('/')
@@ -17,6 +31,7 @@ def home():
     return jsonify({
         "status": "healthy",
         "service": "pokemon-webhook-v2",
+        "port": port,
         "environment": os.getenv('RAILWAY_ENVIRONMENT', 'development')
     })
 
@@ -29,6 +44,5 @@ def handle_error(error):
     }), 500
 
 if __name__ == '__main__':
-    port = int(os.getenv('PORT', '8000'))
     logger.info(f"Starting server on port {port}")
     app.run(host='0.0.0.0', port=port)
