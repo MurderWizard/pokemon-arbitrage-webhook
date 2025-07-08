@@ -3,7 +3,7 @@ builder = "RAILPACK"
 buildCommand = "pip install -r requirements.txt"
 
 [deploy]
-startCommand = "gunicorn webhook_server:application"
+startCommand = "gunicorn app.webhook_server:application"
 healthcheckPath = "/health"
 healthcheckTimeout = 30
 restartPolicyType = "ON_FAILURE"
