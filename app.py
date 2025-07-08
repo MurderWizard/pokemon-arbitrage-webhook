@@ -10,8 +10,9 @@ from flask import Flask, jsonify, request
 
 # Initialize Flask app
 app = Flask(__name__)
-application = app  # For WSGI servers
+# Configure debug logging
 logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
 @app.route('/')
 def index():
@@ -31,7 +32,7 @@ def health():
     })
 
 @app.route('/webhook', methods=['GET', 'POST'])
-def webhook():
+def ebay_webhook():
     """eBay Marketplace Account Deletion Notification endpoint"""
     try:
         if request.method == 'GET':
@@ -340,6 +341,4 @@ def root():
         "status": "operational"
     })
 
-if __name__ == "__main__":
-    port = int(os.getenv("PORT", 8080))
-    app.run(host="0.0.0.0", port=port)
+application = app
