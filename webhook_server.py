@@ -120,6 +120,9 @@ def root():
         }
     }), 200
 
+# Expose the Flask app as 'application' for Gunicorn compatibility
+application = app
+
 if __name__ == "__main__":
     # Get port from environment variable (for Railway) or use default
     port = int(os.getenv("PORT", 5000))
