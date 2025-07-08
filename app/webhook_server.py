@@ -31,6 +31,7 @@ def health():
         "service": "pokemon_arbitrage_webhook",
         "platform": "railway",
         "compliance": "ebay_production",
+        "test_field": "deployed_test",
         "timestamp": datetime.now().isoformat()
     }), 200
 
