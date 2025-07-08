@@ -3,11 +3,13 @@ builder = "NIXPACKS"
 buildCommand = "pip install -r requirements.txt"
 
 [deploy]
-startCommand = "gunicorn app:application --bind 0.0.0.0:$PORT --workers 4 --log-level info"
+startCommand = "gunicorn --workers 4 --log-level info --timeout 120 --bind 0.0.0.0:$PORT app:application"
 healthcheckPath = "/health"
-healthcheckTimeout = 30
+healthcheckTimeout = 60
 restartPolicyType = "ON_FAILURE"
-restartPolicyMaxRetries = 5
+restartPolicyMaxRetries = 3
 
 [env]
 PORT = "8080"
+FLASK_ENV = "production"
+PYTHON_VERSION = "3.13.3"
